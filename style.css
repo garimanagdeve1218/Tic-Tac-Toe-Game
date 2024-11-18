@@ -1,0 +1,56 @@
+*{
+    background-color: bisque;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 75px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.cell:active {
+    background-color: #d0d0d0; /* Active state for clicks */
+}
+
+#gameContainer {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px; /* Spacing between cells */
+    width: 245px; /* Adjusted to include gaps */
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+}
+
+#restartBtn{
+    padding: 10px;
+    color: rgb(17, 16, 16);
+    background-color: rgb(175, 242, 75);
+}
+
+#restartBtn:hover{
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
